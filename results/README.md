@@ -1,6 +1,11 @@
 # Results
 
-Stored outputs of the 12 configurations, five runs per input program.
+Stored outputs of the 12 configurations, five runs per input program:
+12 configurations × 16 input programs × 5 runs = 960 files.
+
+The 16 input programs contain 21 misuse cases (see `dataset/README.md`). There is one
+output file per input program and run, so the cases of one program are judged on the
+same output file.
 
 ```text
 results/{configuration}/{service}/{commits|issues|pull-requests}/{input id}/{1..5}.md

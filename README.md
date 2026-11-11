@@ -8,6 +8,8 @@ natural-language text in separate databases).
 
 This repository contains
 
+- the dataset: 21 misuse cases in 16 input programs, and the lists of specification
+  pages (`dataset/`),
 - the scripts used to collect candidate programs from GitHub (`collect/`),
 - the RAG pipeline: specification storage and repair generation (`rag/`), and
 - the stored outputs of every configuration (`results/`).
@@ -16,7 +18,7 @@ This repository contains
 
 ```text
 .
-├── dataset/     Inputs of the pipeline
+├── dataset/     21 misuse cases in 16 input programs, and specification URLs
 ├── collect/     GitHub search, de-duplication and keyword filter
 ├── rag/
 │   ├── config.py   Models, chunking, top-k, number of runs, system prompt
@@ -28,7 +30,20 @@ This repository contains
 └── tests/       Consistency checks (no API access needed)
 ```
 
-`collect/`, `rag/prompts/` and `results/` have their own README.
+`dataset/`, `collect/`, `rag/prompts/` and `results/` have their own README.
+
+## Dataset
+
+| Misuse type | SwitchBot | Fitbit | Total |
+| --- | ---: | ---: | ---: |
+| RH & EP (request header and endpoint) | 8 | 1 | 9 |
+| EP (endpoint only) | 0 | 12 | 12 |
+| Total | 8 | 13 | 21 |
+
+The 21 cases are contained in 16 input programs (SwitchBot 8, Fitbit 8). A SwitchBot
+program and a Fitbit Sleep API program count as one case each. A Fitbit OAuth program
+counts as two cases, the authorization endpoint and the token endpoint.
+`dataset/README.md` gives the count for every input program.
 
 ## Configurations
 
