@@ -1,0 +1,17 @@
+service,input_path,cases,rh_ep_cases,ep_cases,lines,counted_as
+switchbot,commits/1.scala,1,1,0,17;23;26,API v1.0 endpoints and request headers
+switchbot,commits/2.py,1,1,0,2-3,API v1.0 endpoint and request headers
+switchbot,commits/3.py,1,1,0,5-6,API v1.0 endpoint and request headers
+switchbot,commits/4.py,1,1,0,11;14;21,API v1.0 endpoint and request headers
+switchbot,commits/5.py,1,1,0,1;5;22;44,API v1.0 endpoint and request headers
+switchbot,pull-requests/1.py,1,1,0,7;30;38,API v1.0 endpoint and request headers
+switchbot,pull-requests/2.py,1,1,0,1;7,API v1.0 endpoint and request headers
+switchbot,pull-requests/3.rb,1,1,0,12;22;29;40;50;59,API v1.0 endpoints and request headers
+fitbit,commits/1.go,1,0,1,23,Sleep v1 endpoint
+fitbit,commits/2.java,1,0,1,101;109;117;125;133;141,Sleep v1 endpoints (six calls counted as one case)
+fitbit,commits/3.json,2,0,2,4-5,OAuth 1.0 authorization endpoint; OAuth 1.0 token endpoint
+fitbit,commits/4.pm,1,0,1,15,Sleep v1 endpoint
+fitbit,commits/5.rb,2,0,2,19;25-27,OAuth 1.0 authorization endpoint; OAuth 1.0 token endpoint
+fitbit,issues/5.js,2,0,2,4;6,OAuth 1.0 authorization endpoint; OAuth 1.0 token endpoint
+fitbit,issues/6.py,2,0,2,11;13,OAuth 1.0 authorization endpoint; OAuth 1.0 token endpoint
+fitbit,pull-requests/1.py,2,1,1,6-7;52,OAuth 1.0 authorization endpoint; OAuth 1.0 token endpoint; OAuth 1.0 signing in the request header (one of the two cases is RH & EP)
