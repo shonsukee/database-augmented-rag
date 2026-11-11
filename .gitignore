@@ -1,0 +1,18 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Outputs of new runs (results/ holds the outputs reported in the paper)
+output/
+collected/
+
+# Local working notes
+tmp_task.md
+plan.html
+
+.DS_Store
